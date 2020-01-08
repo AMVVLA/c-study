@@ -11,9 +11,9 @@ int main()
     total = 3* first_sum + second_sum;
     
     if (l == 9 - ((total - 1) % 10))
-    printf("Valid");
+    printf("Valid\n");
     else
-    printf("Not Valid");
+    printf("Not Valid\n");
     
 
  
