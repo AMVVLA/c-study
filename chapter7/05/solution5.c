@@ -11,22 +11,22 @@ int main()
 	while((ch = getchar()) != '\n')
 	{
 		ch = toupper(ch);
-		if(ch == 'A','E','I','L','N','O','R','S','T','U')
+		if(ch == 'A' || 'E' || 'I' || 'L' || 'N' || 'O'|| 'R' || 'S' || 'T' || 'U')
 			ch = 1;
-		else if(ch == 'D','G') 
+		else if(ch == 'D' || 'G') 
 			ch = 2;
-		else if(ch == 'B','C','M','P')
+		else if(ch == 'B' || 'C' || 'M' || 'P')
 			ch = 3;
-		else if(ch == 'F','H','V','W','Y') 
+		else if(ch == 'F' || 'H' || 'V' || 'W' || 'Y') 
 			ch = 4;
 		else if(ch == 'K')
 			ch = 5;
-		else if(ch == 'J','X') 
+		else if(ch == 'J' || 'X') 
 			ch = 8;
-		else if(ch == 'Q','Z')
+		else if(ch == 'Q' || 'Z')
 			ch = 10;
 		sum += ch;
 	}
-	printf("%d\n", sum);
+	printf("Scrabble value:%d\n", sum);
 	return 0;
 }
