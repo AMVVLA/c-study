@@ -2,6 +2,7 @@
 int main()
 {
 	char apb;		
+	
 	printf("Enter phone number:");
 	while((apb = getchar()) != '\n')
 	{
