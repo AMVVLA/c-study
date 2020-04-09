@@ -18,3 +18,26 @@ Let x be the number entered by the user. Newton's method requires an itial guess
 |3	 |1.73205|1.73205|	             1.73205|  
 
 Note that the values of y get progressively closer to the true square root of x. For greater accuracy, your program should use variable of type `double` rather than `float`. Have the program terminate when the absolute value of the difference between the old value of y and the new value of y is less then the product of .00001 and y. Hint: Call the `fabs` function to find the absolute value of a `double`. (You'll need to include the `<math.h>` header at the begging of your program in order to use `fabs`.)
+
+### Solution
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+
+    double number, x; 
+	x = 1;
+    int i = 0;
+
+    printf("Enter a positive number: ");
+    scanf("%lf", &number);
+
+    while (fabs(number/x - x) > 0.00001)
+        x = (x + number / x) / 2;
+
+    printf("Square root: %.5f\n", x);
+    return 0;
+}
+```
