@@ -14,7 +14,7 @@ Factorial of 6: 720
 
 In cases (e)-(g), the program will display a close approximation of the factorial, not necessarily the exact value
 
-### solution
+### Solution
 
 ```c
 #include <stdio.h>
