@@ -10,7 +10,7 @@ int main(void) {
     printf("Enter a positive number: ");
     scanf("%lf", &number);
 
-    while (fabs(number/x - x) > 0.00001)
+    while (fabs(number / x - x) > 0.00001)
         x = (x + number / x) / 2;
 
     printf("Square root: %.5f\n", x);

@@ -12,4 +12,30 @@ Factorial of 6: 720
 (f) Repeat part (a), using a `double` variable instead.  
 (g) Repeat part (a), using a `long double` variable instead.  
 
-In cases (e)-(g), the program will display a close approximation of the factorial, not necessarily the exact value.
+In cases (e)-(g), the program will display a close approximation of the factorial, not necessarily the exact value
+
+### solution
+
+```c
+int main()
+{
+    int fac, num, num2;
+
+	    printf("Enter a positive integer: ");
+		    scanf("%d", &num);
+			    fac = num;
+				    num2 = num;
+					    while(num > 1)
+						        fac *= --num;
+								    printf("factiroal of %d: %d", num2, fac);
+									    return 0;
+}
+```  
+
+a. short : 15  
+b. int: 16  
+c. long : 25  
+d. long long : 25  
+e. float : 34  
+f. long : 170  
+g. long double : 1754  
