@@ -17,18 +17,20 @@ In cases (e)-(g), the program will display a close approximation of the factoria
 ### solution
 
 ```c
+#include <stdio.h>
+
 int main()
 {
-    int fac, num, num2;
+	int fac, num, num2;
 
-	    printf("Enter a positive integer: ");
-		    scanf("%d", &num);
-			    fac = num;
-				    num2 = num;
-					    while(num > 1)
-						        fac *= --num;
-								    printf("factiroal of %d: %d", num2, fac);
-									    return 0;
+	printf("Enter a positive integer: ");
+	scanf("%d", &num);
+	fac = num;
+	num2 = num;
+	while(num > 1)
+		fac *= --num;
+	printf("factiroal of %d: %d", num2, fac);
+	return 0;
 }
 ```  
 
