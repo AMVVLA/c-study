@@ -3,25 +3,28 @@
 
 int main()
 {
-	bool digit_seen[10] = {false};
+	bool digit_seen[10] = {false},
+		arr[10] = {false};
 	int digit, i;
-	int arr[10];
 	long n;
-	i = 0;
 
 	printf("Enter a number: ");
 	scanf("%ld", &n);
-	while(n / 10 == 0)
+	while(n > 0)
 	{
 		digit = n % 10;
 		if (digit_seen[digit])
-			arr[i] = n % 10;
+			arr[digit] = true;
 		digit_seen[digit] = true;
 		n /= 10;
-		i++;
 	}
-
-		printf("Repeated digit(s): %d" ,&arr );
+		printf("Repeated digit(s): ");
+		for(i = 0; i < 10; i++)
+		{
+			if(arr[i])
+			printf("%d ", i);
+		}
+		printf("\n");
 	return 0;
 }
 
