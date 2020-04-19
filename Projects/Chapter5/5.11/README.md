@@ -6,9 +6,6 @@ You entered the number: forty-five
 ```
 *Hint:* Break the number into two digits. User one `switch` statement to print the word for the first digit ("twenty", "thirty", and so forth). Use a second `switch` statement to print the word for the second digit. Don't forget that the numbers between `11` and `19` require special treatment.
 
-Use the following grading scale: `A = 90-100, B = 80-89, C = 70-79, D = 60-69, F = 0-59.`   
-Print an error message if the grade is larger than `100` or less than `0`. *Hint:* Break the grade into two digits, then use a `switch` statement to test the ten's digit.
-
 ### Solution
 ```c
 #include <stdio.h>
